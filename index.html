@@ -13,25 +13,29 @@
     <section id="banner">
         <img src="banner.jpg" alt="Banner">
     </section>
-    <section id="services">
+    <section id="services" class="carousel">
         <h2>Serviços</h2>
-        <div class="service">
-            <img src="icon-manicure.png" alt="Manicure">
-            <h3>Manicure</h3>
-            <p>Descrição breve do serviço de manicure.</p>
+        <div class="carousel-container">
+            <div class="service">
+                <img src="nail-art-1.jpg" alt="Manicure">
+                <h3>Manicure</h3>
+                <p>Descrição breve do serviço de manicure.</p>
+            </div>
+            <div class="service">
+                <img src="nail-art-2.jpg" alt="Pedicure">
+                <h3>Pedicure</h3>
+                <p>Descrição breve do serviço de pedicure.</p>
+            </div>
+            <div class="service">
+                <img src="nail-art-2.jpg" alt="Combo">
+                <h3>Manicure e Pedicure</h3>
+                <p>Descrição breve do serviço combinado.</p>
+            </div>
         </div>
-        <div class="service">
-            <img src="icon-pedicure.png" alt="Pedicure">
-            <h3>Pedicure</h3>
-            <p>Descrição breve do serviço de pedicure.</p>
-        </div>
-        <div class="service">
-            <img src="icon-combo.png" alt="Combo">
-            <h3>Manicure e Pedicure</h3>
-            <p>Descrição breve do serviço combinado.</p>
-        </div>
-        <button onclick="location.href='agendamento.html'">Agende seu Horário</button>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
     </section>
+    
     <section id="promotions">
         <h2>Promoções</h2>
         <p>Confira nossas promoções especiais para este mês!</p>
@@ -81,14 +85,16 @@
     <section id="contact">
         <h2>Entre em Contato</h2>
         <p>Informações de contato e links para redes sociais.</p>
-        <ul class="social-media">
-            <li><a href="#"><img src="icon-facebook.png" alt="Facebook"></a></li>
-            <li><a href="#"><img src="icon-instagram.png" alt="Instagram"></a></li>
-            <li><a href="#"><img src="icon-twitter.png" alt="Twitter"></a></li>
+        <ul id="social-media">
+            <li><a href="#"><img style="height: 25px; margin: 0 10px 0 10px" class="icon" src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img style="height: 25px; margin: 0 10px 0 10px" class="icon" src="instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img style="height: 25px; margin: 0 10px 0 10px" class="icon" src="whatsapp (1).png" alt="Whatsapp"></a></li>
         </ul>
     </section>
     <footer>
         <p>&copy; 2024 Manicure a Domicílio. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -163,3 +163,48 @@ button:hover {
     background: #96b2b4;
     transform: scale(1.05);
 }
+
+
+#social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+/*Carrocel*/
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel .service {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel .prev, .carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
