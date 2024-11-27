@@ -174,19 +174,29 @@ button:hover {
 
 /*Carrocel*/
 
+/* Estilos do carrossel */
 .carousel {
     position: relative;
     overflow: hidden;
+    width: 90%;
 }
 
 .carousel-container {
     display: flex;
+    justify-content: space-between;
     transition: transform 0.5s ease;
+    width: 100%;
 }
 
 .carousel .service {
     min-width: 100%;
     box-sizing: border-box;
+}
+
+.carousel .service img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
 .carousel .prev, .carousel .next {
@@ -208,3 +218,4 @@ button:hover {
 .carousel .next {
     right: 10px;
 }
+
