@@ -13,3 +13,11 @@ document.querySelector('.next').addEventListener('click', () => {
     currentIndex = (currentIndex < totalItems - 1) ? currentIndex + 1 : 0;
     carousel.style.transform = `translateX(-${currentIndex * 104}%)`;
 });
+
+
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('showing');
+});
